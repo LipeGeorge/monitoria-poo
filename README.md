@@ -1,1 +1,1 @@
-# Repositorio dos meus códigos gerados na Monitoria de Programação Orientada à Objetos
+# Repositorio das resoluções de questões durante o período Monitoria de Programação Orientada à Objetos
