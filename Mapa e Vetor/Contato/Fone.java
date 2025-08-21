@@ -14,17 +14,13 @@ public class Fone {
         
         String validos = "0123456789().";
 
-        for(int ch = 0; ch < number.length(); ch++){
+        // For each percorrendo cada elemento do numero passado.
+        for(char c: this.number.toCharArray()){
 
-            // Verifica se "validos" contém os caracteres que estão em number.
-            if(!validos.contains(
-                        String.valueOf(
-                            number.charAt(ch)
-                        )
-                    )
-                )
-            {
-                
+            // verificando com String.indefOf que retorna a posição da ocorrência do char
+            // ou então -1 se não encontrar
+            if(validos.indexOf(c) == -1){
+
                 return false;
 
             }
@@ -47,7 +43,7 @@ public class Fone {
 
     @Override
     public String toString(){
-        return "";
+        return id+":"+number;
     }
 
 }
